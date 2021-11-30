@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button</title>
+</head>
+<body>
+    <a href="http://www.google.com" target="_blank">
+        <button style="background-color: bisque;color:red">google</button>
+    </a>
+    <br>
+    <button onclick="dosomething()" style="background-color:blanchedalmond">click me</button>
+    <p id="text">hello</p>
+    <input type="button" value="text" onclick="alert('HI')" style="background-color: green;color:white">
+    <script>
+        function dosomething() {
+            //document.getElementById("text").innerHTML="hello world"
+            
+            var a =document.getElementById("text").innerHTML
+            document.getElementById("text").innerHTML=a.replace(a,"hello world");
+        }
+    </script>
+</body>
+</html>
